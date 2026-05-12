@@ -17,6 +17,22 @@ Muestra el tamaño final del set y los elementos ordenados alfabéticamente.
 
   Set <String> setnombres = {};
   for(int i = 0; i < num! ; i++ ){
-    
+    print('Ya ok cara mani, escribe el nombre numero ${i + 1}');
+    String? valor = stdin.readLineSync();
+
+    setnombres.add(valor!);
   }
+  print('Yara manel estos son los datos del SET');
+
+  print('TAMAÑO DEL SET: ${setnombres.length}');
+  print('');
+  print('Elementos Ordenados Alfabeticamente');
+  //Primero convertimos el set a lista
+  List <String> listas = setnombres.toList();
+  
+  //Y luego lo paso lo ordeno con sort;
+  listas.sort();
+  print(listas);
+
+
 }
