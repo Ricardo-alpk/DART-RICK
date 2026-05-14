@@ -27,8 +27,10 @@ void main(){
   //Ok como estabamos diciendo antes, dividimos la frase en una lista de palabras
   List<String> palabras = frase!.split(' ');
 
+  //Repasamos la lista de palabras
   for(int i = 0; i < palabras.length ; i++){
 
+    //Palabra por palabra
     String palabra = palabras[i];
 
     if(numwords.containsKey(palabra)){

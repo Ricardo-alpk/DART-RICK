@@ -78,6 +78,8 @@ print(mapContactos.length);
 //aqui declaramos los elementos por Tipos
 
 var contactos = Map<String, int>();
+
+
 //Aunque es mas comun ponerlo asignarlo asi
 Map<String,int> MineContactos = {
 
