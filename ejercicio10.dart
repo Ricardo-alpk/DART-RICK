@@ -33,9 +33,16 @@ void main(){
     //Palabra por palabra
     String palabra = palabras[i];
 
+    //La manera correcta de leer esta condición es desde el else
+    
+    //(2) - Si la palabra ya existe se le suma un mas uno (con esto '!' se garantiza que si existe)
+    //se le suma uno y sobreescribimos el valor nuevo en el mapa 
+    //Hay que entender que 
     if(numwords.containsKey(palabra)){
       numwords[palabra] = numwords[palabra]! + 1;
-    } else {
+    } 
+    //(1) - Si la palabra no existe se registra como nueva yse le añade uno
+    else {
       numwords[palabra] = 1;
     }
 
